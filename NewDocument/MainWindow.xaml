@@ -1,0 +1,36 @@
+﻿<Window x:Class="NewDocument.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewDocument"
+        mc:Ignorable="d"
+        Title="New Document" Height="370" Width="400" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <GroupBox Header="Connect To SolidWorks" Height="100" Margin="2">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnConn" Click="BtnConn_OnClick" Width="150" Height="25" Content="Connect to SolidWorks"/>
+                <TextBox x:Name="msgBox" TextWrapping="WrapWithOverflow" Grid.Column="1"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="New Document" Margin="2">
+            <StackPanel>
+                <Button x:Name="btnNewPart" Click="BtnNewPart_OnClick" Content="New Part" Width="150" Height="25" Margin="2"/>
+                <Button x:Name="btnNewAssy" Click="BtnNewAssy_OnClick" Content="New Assembly" Width="150" Height="25" Margin="2"/>
+                <Button x:Name="btnNewDraw" Click="BtnNewDraw_OnClick" Content="New Drawing" Width="150" Height="25" Margin="2"/>
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Open Document" Margin="2">
+            <StackPanel>
+                <Button x:Name="btnOpenPart" Click="BtnOpenPart_OnClick" Content="Open Part" Width="150" Height="25" Margin="2"/>
+                <Button x:Name="btnOpenAssy" Click="BtnOpenAssy_OnClick" Content="Open Assembly" Width="150" Height="25" Margin="2"/>
+                <Button x:Name="btnOpenDraw" Click="BtnOpenDraw_OnClick" Content="Open Drawing" Width="150" Height="25" Margin="2"/>
+            </StackPanel>
+        </GroupBox>
+
+    </StackPanel>
+</Window>
