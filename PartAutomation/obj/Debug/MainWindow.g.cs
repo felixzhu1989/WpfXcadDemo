@@ -141,6 +141,8 @@ namespace PartAutomation {
             }
             this._contentLoaded = true;
         }
+
+       
     }
 }
 
